@@ -184,6 +184,7 @@ code {
   text-decoration: none;
   font-size: 18px;
   font-weight: 700;
+  border: 0;
 }
 
 .Button-sm {
@@ -201,13 +202,16 @@ code {
   color: #EDEFEE;
 }
 
-
 .Button-link {
   color: #495E57;
 }
 
 .Button-link:hover {
   color: #EE9972;
+}
+.Button-block {
+  display: block;
+  width: 100%;
 }
 
 /* Special section */
@@ -507,4 +511,98 @@ code {
   font-weight: 700;
   text-decoration: none;
   color: #495E57;
+}
+
+/* Booking page */
+.Booking-page h1 {
+  font-family: 'Markazi Text';
+  font-weight: 400;
+  font-size: 48px;
+  margin-bottom: 0;
+}
+.Booking-page > p {
+  margin: 0;
+  font-size: 18px;
+  color: gray;
+}
+.Booking-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0;
+  grid-row-gap: 1rem;
+  margin-bottom: 3rem;
+}
+.Booking-summary {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+}
+.Booking-summary, .Booking-form {
+  padding: 1rem;
+}
+.Booking-summary button {
+  margin: 0;
+}
+.Booking-summary-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 16px 4px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.Booking-summary-item span{
+
+  color:rgba(0, 0, 0, 0.6);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  gap: 4px;
+}
+
+input[type="date"],
+select,
+input[type="number"] {
+  padding: 16px 12px;
+  font-size: 14px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  margin-bottom: 1rem;
+}
+
+select {
+  height: 48px;
+}
+
+input[type="submit"] {
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: #428bca;
+  color: #fff;
+}
+
+input[type="submit"]:hover {
+  background-color: #3071a9;
+  border-color: #285e8e;
 }

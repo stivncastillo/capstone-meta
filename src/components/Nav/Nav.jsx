@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { ReactComponent as MenuIcon } from '../../assets/icons/menu.svg';
 
 function Nav() {
@@ -10,7 +11,9 @@ function Nav() {
       <nav className="Main-navigation">
         <ul>
           <li>
-            <a href="#">Home</a>
+            <Link to="/">
+              <a href="#">Home</a>
+            </Link>
           </li>
           <li>
             <a href="#">About</a>

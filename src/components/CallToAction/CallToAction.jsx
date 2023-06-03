@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function CallToAction() {
   return (
@@ -16,9 +17,12 @@ function CallToAction() {
             sapiente quibusdam.
           </p>
 
-          <a href="#" className="Button Button-primary">
-            Reserve a Table
-          </a>
+          <Link to="/booking">
+            <a href="#" className="Button Button-primary">
+              Reserve a Table
+            </a>
+          </Link>
+
         </div>
         <div className="Hero-image">
           <div />
